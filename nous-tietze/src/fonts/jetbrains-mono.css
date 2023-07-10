@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('./JetBrainsMono-Medium.ttf') format('truetype');
+}
+
+body {
+  font-family: 'JetBrains Mono', monospace;
+}
