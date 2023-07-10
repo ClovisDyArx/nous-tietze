@@ -1,32 +1,49 @@
-<mat-toolbar>
-  IMAGE
-  <button mat-button [matMenuTriggerFor]="tietze">
-    Le syndrome de Tietze
-    <mat-menu #tietze="matMenu">
-      <button mat-menu-item (click)="navigateTo('histoire')">Histoire</button>
-      <button mat-menu-item (click)="navigateTo('asso')">L'association</button>
-    </mat-menu>
-  </button>
-  <button mat-button [matMenuTriggerFor]="news">
+<mat-toolbar class="toolbar">
+  <img ngSrc="assets/logo-tietze.png" class="logo-navbar" (click)="navigateTo('accueil')" height="917" width="1681">
+
+  <div class="navbar-button">
+    <button mat-button class="mat-button" (click)="navigateTo('tietze')">
+      Le syndrome de Tietze
+    </button>
+  </div>
+
+  <div class="navbar-button">
+    <button mat-button class="mat-button" (click)="navigateTo('asso')">
+      L'association
+    </button>
+  </div>
+
+  <div class="navbar-button">
+    <button mat-button [matMenuTriggerFor]="news" class="mat-button">
     Actualités
-    <mat-menu #news="matMenu">
-      <button mat-menu-item (click)="navigateTo('news')">News</button>
-      <button mat-menu-item (click)="navigateTo('events')">Événements</button>
-      <button mat-menu-item (click)="navigateTo('mediatietze')">Mediatietze</button>
+    <mat-menu #news="matMenu" class="mat-menu">
+      <button mat-menu-item (click)="navigateTo('news')" class="mat-menu-item" style="color: #504645;">News</button>
+      <button mat-menu-item (click)="navigateTo('events')" class="mat-menu-item" style="color: #504645;">Événements</button>
+      <button mat-menu-item (click)="navigateTo('mediatietze')" class="mat-menu-item" style="color: #504645;">Mediatietze</button>
     </mat-menu>
   </button>
-  <button mat-button [matMenuTriggerFor]="contact">
+  </div>
+
+  <div class="navbar-button">
+    <button mat-button [matMenuTriggerFor]="contact" class="mat-button">
     Contact
-    <mat-menu #contact="matMenu">
-      <button mat-menu-item (click)="navigateTo('infos')">Informations</button>
-      <button mat-menu-item (click)="navigateTo('témoignages')">Témoignages</button>
-      <button mat-menu-item (click)="navigateTo('parrains-marraines')">Parrains et Marraines</button>
+    <mat-menu #contact="matMenu" class="mat-menu">
+      <button mat-menu-item (click)="navigateTo('infos')" class="mat-menu-item" style="color: #504645;">Informations</button>
+      <button mat-menu-item (click)="navigateTo('témoignages')" class="mat-menu-item" style="color: #504645;">Témoignages</button>
+      <button mat-menu-item (click)="navigateTo('parrains-marraines')" class="mat-menu-item" style="color: #504645;">Parrains et Marraines</button>
     </mat-menu>
   </button>
-  <button mat-button [matMenuTriggerFor]="don">
+  </div>
+
+  <div class="navbar-button">
+    <button mat-button [matMenuTriggerFor]="don" class="mat-button">
     Dons
-    <mat-menu #don="matMenu">
-      <button mat-menu-item (click)="navigateTo('dons')">Vous voulez nous aider ?</button>
+    <mat-menu #don="matMenu" class="mat-menu">
+      <button mat-menu-item (click)="navigateTo('dons')" class="mat-menu-item" style="color: #504645;">Vous voulez nous aider ?</button>
     </mat-menu>
   </button>
+  </div>
+
+  <app-social-medias></app-social-medias>
+
 </mat-toolbar>

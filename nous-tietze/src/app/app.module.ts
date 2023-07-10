@@ -11,23 +11,29 @@ import { NavbarComponent } from './navbar/navbar.component';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatMenuModule} from "@angular/material/menu";
 import {MatButtonModule} from "@angular/material/button";
+import { SocialMediasComponent } from './social-medias/social-medias.component';
+import {NgOptimizedImage} from "@angular/common";
+import { MainMenuComponent } from './main-menu/main-menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarButtonComponent,
-    NavbarComponent
+    NavbarComponent,
+    SocialMediasComponent,
+    MainMenuComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatExpansionModule,
-    MatListModule,
-    MatToolbarModule,
-    MatMenuModule,
-    MatButtonModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatExpansionModule,
+        MatListModule,
+        MatToolbarModule,
+        MatMenuModule,
+        MatButtonModule,
+        NgOptimizedImage
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
