@@ -1,3 +1,15 @@
 .main-menu {
   background: #FADAE2;
+  padding-top: 60px;
+}
+
+.motto-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.motto-tietze {
+  width: 80%;
 }

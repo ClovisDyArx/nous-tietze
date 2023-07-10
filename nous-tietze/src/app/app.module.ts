@@ -14,6 +14,7 @@ import {MatButtonModule} from "@angular/material/button";
 import { SocialMediasComponent } from './social-medias/social-medias.component';
 import {NgOptimizedImage} from "@angular/common";
 import { MainMenuComponent } from './main-menu/main-menu.component';
+import { EndpageNavbarComponent } from './endpage-navbar/endpage-navbar.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { MainMenuComponent } from './main-menu/main-menu.component';
     NavbarButtonComponent,
     NavbarComponent,
     SocialMediasComponent,
-    MainMenuComponent
+    MainMenuComponent,
+    EndpageNavbarComponent
   ],
     imports: [
         BrowserModule,
