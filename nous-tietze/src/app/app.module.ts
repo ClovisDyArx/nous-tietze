@@ -15,6 +15,9 @@ import { SocialMediasComponent } from './social-medias/social-medias.component';
 import {NgOptimizedImage} from "@angular/common";
 import { MainMenuComponent } from './main-menu/main-menu.component';
 import { EndpageNavbarComponent } from './endpage-navbar/endpage-navbar.component';
+import { NewsletterComponent } from './newsletter/newsletter.component';
+import {MatCardModule} from "@angular/material/card";
+import {MatInputModule} from "@angular/material/input";
 
 @NgModule({
   declarations: [
@@ -23,19 +26,22 @@ import { EndpageNavbarComponent } from './endpage-navbar/endpage-navbar.componen
     NavbarComponent,
     SocialMediasComponent,
     MainMenuComponent,
-    EndpageNavbarComponent
+    EndpageNavbarComponent,
+    NewsletterComponent
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        BrowserAnimationsModule,
-        MatExpansionModule,
-        MatListModule,
-        MatToolbarModule,
-        MatMenuModule,
-        MatButtonModule,
-        NgOptimizedImage
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatExpansionModule,
+    MatListModule,
+    MatToolbarModule,
+    MatMenuModule,
+    MatButtonModule,
+    NgOptimizedImage,
+    MatCardModule,
+    MatInputModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
