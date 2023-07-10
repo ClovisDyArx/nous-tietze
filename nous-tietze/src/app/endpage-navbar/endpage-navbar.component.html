@@ -1,23 +1,66 @@
 <div class="endpage-container">
   <div class="endpage-histoire">
-    <p>histoire</p>
+    <h3>Histoire</h3>
+    <p>
+      <a [routerLink]="'/tietze'" target="_self">Le syndrome de Tietze</a>
+    </p>
+    <p>
+      <a [routerLink]="'/asso'" target="_self">L'association</a>
+    </p>
   </div>
   <div class="endpage-news">
-    <p>news</p>
+    <h3>Quoi de neuf ?</h3>
+    <p>
+      <a [routerLink]="'/news'" target="_self">Actualités</a>
+    </p>
+    <p>
+      <a [routerLink]="'/events'" target="_self">Événements</a>
+    </p>
+    <p>
+      <a [routerLink]="'/mediatietze'" target="_self">Médiatietze</a>
+    </p>
   </div>
   <div class="endpage-contact">
-    <p>contact</p>
+    <h3>Contact</h3>
+    <p>
+      <a [routerLink]="'/infos'" target="_self">Informations</a>
+    </p>
+    <p>
+      <a [routerLink]="'/temoignages'" target="_self">Témoignages</a>
+    </p>
+    <p>
+      <a [routerLink]="'/parrains-marraines'" target="_self">Parrains et Marraines</a>
+    </p>
   </div>
   <div class="endpage-dons">
-    <p>dons</p>
+    <h3>Dons</h3>
+    <p>
+      <a [routerLink]="'/dons'" target="_self">Vous voulez nous aider ?</a>
+    </p>
   </div>
   <div class="endpage-newsletter">
-    <p>newsletter</p>
+    <h3>Newsletter</h3>
+    <!--    TODO: newsletter component-->
   </div>
   <div class="endpage-infos">
-    <p>infos</p>
+    <h3 style="text-align: center">ADRESSE</h3>
+    <p style="text-align: center">
+      2777 Route de Neuville,
+      <br>
+      01250 Bohas-Meyriat-Rignat,
+      <br>
+      France
+    </p>
+    <h3 style="text-align: center">EMAIL</h3>
+    <p style="text-align: center">nous.tietze@gmail.com</p>
+    <h3 style="text-align: center">à propos..</h3>
+    <p style="text-align: center">
+      MIT License
+      <br>
+      Copyright (c) 2023 DyArx
+    </p>
   </div>
   <div class="endpage-logo">
-    <p>logo</p>
+      <img ngSrc="assets/petit-tietze.png" class="endpage-logo-img" height="700" width="700">
   </div>
 </div>

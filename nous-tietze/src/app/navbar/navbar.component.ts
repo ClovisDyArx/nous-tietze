@@ -11,6 +11,6 @@ import { Router } from "@angular/router";
 export class NavbarComponent {
   constructor(private router: Router) {}
   navigateTo(route: string) {
-    this.router.navigate([route]);
+    this.router.navigate([route, "_self"]);
   }
 }
