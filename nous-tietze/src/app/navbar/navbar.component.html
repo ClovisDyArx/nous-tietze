@@ -1,0 +1,32 @@
+<mat-toolbar>
+  IMAGE
+  <button mat-button [matMenuTriggerFor]="tietze">
+    Le syndrome de Tietze
+    <mat-menu #tietze="matMenu">
+      <button mat-menu-item (click)="navigateTo('histoire')">Histoire</button>
+      <button mat-menu-item (click)="navigateTo('asso')">L'association</button>
+    </mat-menu>
+  </button>
+  <button mat-button [matMenuTriggerFor]="news">
+    Actualités
+    <mat-menu #news="matMenu">
+      <button mat-menu-item (click)="navigateTo('news')">News</button>
+      <button mat-menu-item (click)="navigateTo('events')">Événements</button>
+      <button mat-menu-item (click)="navigateTo('mediatietze')">Mediatietze</button>
+    </mat-menu>
+  </button>
+  <button mat-button [matMenuTriggerFor]="contact">
+    Contact
+    <mat-menu #contact="matMenu">
+      <button mat-menu-item (click)="navigateTo('infos')">Informations</button>
+      <button mat-menu-item (click)="navigateTo('témoignages')">Témoignages</button>
+      <button mat-menu-item (click)="navigateTo('parrains-marraines')">Parrains et Marraines</button>
+    </mat-menu>
+  </button>
+  <button mat-button [matMenuTriggerFor]="don">
+    Dons
+    <mat-menu #don="matMenu">
+      <button mat-menu-item (click)="navigateTo('dons')">Vous voulez nous aider ?</button>
+    </mat-menu>
+  </button>
+</mat-toolbar>
