@@ -18,6 +18,16 @@ import { EndpageNavbarComponent } from './endpage-navbar/endpage-navbar.componen
 import { NewsletterComponent } from './newsletter/newsletter.component';
 import {MatCardModule} from "@angular/material/card";
 import {MatInputModule} from "@angular/material/input";
+import { AccueilComponent } from './accueil/accueil.component';
+import { TietzeComponent } from './tietze/tietze.component';
+import { AssociationComponent } from './association/association.component';
+import { NewsComponent } from './news/news.component';
+import { EventsComponent } from './events/events.component';
+import { MediatietzeComponent } from './mediatietze/mediatietze.component';
+import { InfosComponent } from './infos/infos.component';
+import { TemoignagesComponent } from './temoignages/temoignages.component';
+import { ParrainsMarrainesComponent } from './parrains-marraines/parrains-marraines.component';
+import { DonsComponent } from './dons/dons.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +37,17 @@ import {MatInputModule} from "@angular/material/input";
     SocialMediasComponent,
     MainMenuComponent,
     EndpageNavbarComponent,
-    NewsletterComponent
+    NewsletterComponent,
+    AccueilComponent,
+    TietzeComponent,
+    AssociationComponent,
+    NewsComponent,
+    EventsComponent,
+    MediatietzeComponent,
+    InfosComponent,
+    TemoignagesComponent,
+    ParrainsMarrainesComponent,
+    DonsComponent
   ],
   imports: [
     BrowserModule,
