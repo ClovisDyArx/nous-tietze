@@ -28,6 +28,7 @@ import { InfosComponent } from './infos/infos.component';
 import { TemoignagesComponent } from './temoignages/temoignages.component';
 import { ParrainsMarrainesComponent } from './parrains-marraines/parrains-marraines.component';
 import { DonsComponent } from './dons/dons.component';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -60,7 +61,9 @@ import { DonsComponent } from './dons/dons.component';
     MatButtonModule,
     NgOptimizedImage,
     MatCardModule,
-    MatInputModule
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

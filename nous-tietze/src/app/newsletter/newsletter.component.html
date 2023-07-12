@@ -1,19 +1,56 @@
+<!--<mat-card>-->
+<!--  <mat-card-content>-->
+<!--    <h2>Newsletter</h2>-->
+<!--    <mat-form-field appearance="outline">-->
+<!--      <mat-label>Prénom</mat-label>-->
+<!--      <input matInput placeholder="Entre ton prénom">-->
+<!--    </mat-form-field>-->
+<!--    <mat-form-field appearance="outline">-->
+<!--      <mat-label>Nom</mat-label>-->
+<!--      <input matInput placeholder="Entre ton nom">-->
+<!--    </mat-form-field>-->
+<!--    <mat-form-field appearance="outline">-->
+<!--      <mat-label>Courriel</mat-label>-->
+<!--      <input matInput placeholder="Entre ton courriel">-->
+<!--    </mat-form-field>-->
+<!--    <button mat-raised-button color="primary">S'abonner</button>-->
+<!--  </mat-card-content>-->
+<!--</mat-card>-->
+
 <mat-card>
   <mat-card-content>
     <h2>Newsletter</h2>
-    <mat-form-field appearance="outline">
-      <mat-label>Prénom</mat-label>
-      <input matInput placeholder="Entre ton prénom">
-    </mat-form-field>
-    <mat-form-field appearance="outline">
-      <mat-label>Nom</mat-label>
-      <input matInput placeholder="Entre ton nom">
-    </mat-form-field>
-    <mat-form-field appearance="outline">
-      <mat-label>Courriel</mat-label>
-      <input matInput placeholder="Entre ton courriel">
-    </mat-form-field>
-    <button mat-raised-button color="primary">S'abonner</button>
+    <form (ngSubmit)="subscribeNewsletter()">
+
+      <mat-form-field appearance="outline">
+        <mat-label>Prénom</mat-label>
+        <input matInput placeholder="Entre ton prénom" [(ngModel)]="firstName" name="firstName" required>
+        <mat-error *ngIf="!firstName">
+          Votre prénom est requis.
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Nom</mat-label>
+        <input matInput placeholder="Entre ton nom" [(ngModel)]="lastName" name="lastName" required>
+        <mat-error *ngIf="!lastName">
+          Votre nom est requis.
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Courriel</mat-label>
+        <input matInput placeholder="Entre ton courriel" [formControl]="email" [email]="true" required>
+        <mat-error *ngIf="email.hasError('required') && (email.dirty || email.touched)">
+          Le courriel est requis.
+        </mat-error>
+        <mat-error *ngIf="email.hasError('email') && (email.dirty || email.touched)">
+          Le courriel n'est pas valide.
+        </mat-error>
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" type="submit">S'abonner</button>
+
+    </form>
   </mat-card-content>
 </mat-card>
-
